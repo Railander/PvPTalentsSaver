@@ -22,7 +22,7 @@ Once installed, PvP Talents Saver works automatically. There are no settings to 
 
 ## Compatibility
 
-- Compatible with World of Warcraft: The War Within and subsequent expansions.
+- Compatible with World of Warcraft: Midnight and subsequent expansions.
 
 ## Support
 

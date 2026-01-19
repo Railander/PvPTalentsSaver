@@ -1,3 +1,7 @@
+# v2.0.2 (2026-01-19)
+
+- Updated .toc for Midnight
+
 # v2.0.1 (2025-05-18)
 
 - Rewrite for The War Within expansion
