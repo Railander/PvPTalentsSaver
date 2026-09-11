@@ -1,1 +1,15 @@
 manual-changelog: CHANGELOG.md
+
+# EXCLUSIONARY MINDSET (house rule -- see ../AGENTS.md): only .lua + .toc +
+# CHANGELOG.md may ship (this repo has no logo file). The packager archives
+# tracked files at the tag, so every other tracked file must be listed below.
+ignore:
+    - LICENSE
+    - README.md
+    - .gitignore
+    - .gitattributes
+    - .github
+    - tests
+    # backup: gitignored and untracked, never packaged either way
+    - AGENTS.md
+    - AGENTS_MEMORY.md

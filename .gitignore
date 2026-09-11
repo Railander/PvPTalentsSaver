@@ -1,1 +1,36 @@
 .vscode
+
+# secrets / credentials (explicit even though the deny-by-default below covers them)
+CF_API_KEY.txt
+*.key
+*.pem
+*.pfx
+.env
+.env.*
+*token*
+secret*
+
+# EXCLUSIONARY BY DEFAULT (house rule -- see ../AGENTS.md): everything is
+# ignored unless explicitly allowed below. A new file that isn't allowlisted
+# stays invisible to `git status` and can never reach the public repo or the
+# CurseForge zip by accident (the packager archives tracked files at the tag
+# -- untracked files never reach the runner). To track a new game file,
+# allowlist it here FIRST, then `git add` it.
+*
+!*/
+
+# explicitly allowed: game files, player docs, release infra
+# (this repo has no logo file and no workflows dir; .github/FUNDING.yml
+# stays tracked as-is, nothing new is expected under .github/)
+!.gitignore
+!.pkgmeta
+!*.lua
+!*.toc
+!CHANGELOG.md
+!README.md
+!LICENSE
+
+# local-only, never tracked even though the allowlist above would permit them
+AGENTS.md
+AGENTS_MEMORY.md
+tests/
